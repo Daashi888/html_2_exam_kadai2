@@ -8,7 +8,11 @@ body {
 }
 
 .main-header {
-  padding-bottom: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  /* padding-bottom: 13%; */
   width: 100%;
   background-size: cover;
   background-image: url("../images/header.jpg");
@@ -20,19 +24,31 @@ body {
 header {
   width: 100%;
   height: 50px;
-  background: #2B2B2B;
+  background-color: #2B2B2B;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 100;
 }
 
 header ul {}
 
-header ul a {}
+header ul a {
+  color: #fff;
+  text-decoration: none;
+}
 
 header li {
   list-style: none;
   padding-top: 15px;
+}
+
+.left li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
 }
 
 header ul:after {}
@@ -47,7 +63,12 @@ header ul:after {}
 }
 
 .about {
+  font-size: 1.5rem;
   /* About Achieve部分の実装 */
+}
+
+.moji {
+  font-size: 0.8rem;
 }
 
 /* ここから */
@@ -56,10 +77,20 @@ header ul:after {}
 
 }
 
-.function-images {}
+.function-images {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
 
 .function-image {
   text-align: center;
+  display: inline-block;
+}
+
+.function-image {
+  margin: 5%;
+  /* bottom: 50px; */
 }
 
 /* ここまでがfunction部分の実装 */
@@ -67,7 +98,7 @@ header ul:after {}
 footer {
   width: 100%;
   height: 70px;
-  background: #283A4B;
+  background-color: #283A4B;
   position: absolute;
   bottom: 0;
   /* footer部分の実装 */
@@ -85,7 +116,15 @@ footer {
   margin: 0;
 }
 
-ul a {
+p {
+  font-size: 0.8;
+}
+
+.company {
+  font-size: 0.8rem;
+}
+
+/* ul a {
   float: left;
   background-color: brown;
-}
+} */
